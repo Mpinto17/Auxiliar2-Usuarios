@@ -135,3 +135,6 @@ STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
 #STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
+#Con esta linea le diremos al proyecto que el sistema de usuarios ahora será en base al modelo User que acabamos de crear.
+AUTH_USER_MODEL = 'todoapp.User'
